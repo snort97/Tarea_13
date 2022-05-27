@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css5.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Página inicial de Juan Tuesta",
+  title_2: "Enlaces favoritos:",
+  title_3: "Páginas personales:",
+  title_4: "Páginas de referencia:",
+  title_5: "Portales:",
+  title_6: "Publicaciones:",
+  paragraph_1: "1. Documentalistas",
+  paragraph_2: "- Charkes F.Golfarb",
+  paragraph_3: "- Lou Bornard",
+  paragraph_4: "- Tim-Berners Lee",
+  paragraph_5: "2. Historiadores",
+  paragraph_6: "3. Linguistas",
+  paragraph_7: "4. Traductores",
+  paragraph_8: "1. Bibliotecas universitarias",
+  paragraph_9: "2. Centros de documentación",
+  paragraph_10: "3. Museos de arte contemporaneo",
+  paragraph_11: "4. Medios de comunicación",
+  paragraph_12: "1. Inicia",
+  paragraph_13: "2. Telépolis",
+  paragraph_14: "3. Ciudades",
+  paragraph_15: "4. Terra",
+  paragraph_16: "1. Ciber@is",
+  paragraph_17: "2. Diarios tecnología de la información",
+  paragraph_18: "3. The standard",
+  paragraph_19: "4. Infoworld",
+  paragraph_20: "5. Wired",
+  paragraph_21: "Bienvenido a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+  paragraph_22: "1. Páginas personales",
+  paragraph_23: "2. Páginas de referencia",
+  paragraph_24: "3. Portales",
+  paragraph_25: "4. Publicaciones",
+  paragraph_26: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const subtitle_2x = <h2>{data.title_3}</h2>;
+const subtitle_3x = <h2>{data.title_4}</h2>;
+const subtitle_4x = <h2>{data.title_5}</h2>;
+const subtitle_5x = <h2>{data.title_6}</h2>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+const paragraph_4x = <p>{data.paragraph_4}</p>;
+const paragraph_5x = <p>{data.paragraph_5}</p>;
+const paragraph_6x = <p>{data.paragraph_6}</p>;
+const paragraph_7x = <p>{data.paragraph_7}</p>;
+const paragraph_8x = <p>{data.paragraph_8}</p>;
+const paragraph_9x = <p>{data.paragraph_9}</p>;
+const paragraph_10x = <p>{data.paragraph_10}</p>;
+const paragraph_11x = <p>{data.paragraph_11}</p>;
+const paragraph_12x = <p>{data.paragraph_12}</p>;
+const paragraph_13x = <p>{data.paragraph_13}</p>;
+const paragraph_14x = <p>{data.paragraph_14}</p>;
+const paragraph_15x = <p>{data.paragraph_15}</p>;
+const paragraph_16x = <p>{data.paragraph_16}</p>;
+const paragraph_17x = <p>{data.paragraph_17}</p>;
+const paragraph_18x = <p>{data.paragraph_18}</p>;
+const paragraph_19x = <p>{data.paragraph_19}</p>;
+const paragraph_20x = <p>{data.paragraph_20}</p>;
+const paragraph_21x = <p>{data.paragraph_21}</p>;
+const paragraph_22x = <p>{data.paragraph_22}</p>;
+const paragraph_23x = <p>{data.paragraph_23}</p>;
+const paragraph_24x = <p>{data.paragraph_24}</p>;
+const paragraph_25x = <p>{data.paragraph_25}</p>;
+const paragraph_26x = <p>{data.paragraph_26}</p>;
+
+const element = (
+  <div class="menu">
+    {title_x}
+    <br/>
+    {paragraph_21x}
+    <br/>
+    {subtitle_x}
+    <br/>
+    <div class="menu_paginas">
+    {paragraph_22x}
+    </div>
+    {paragraph_23x}
+    {paragraph_24x}
+    {paragraph_25x}
+    <br/>
+    <br/>
+    {subtitle_2x}
+    <br/>
+    {paragraph_x}
+    <div class="menu__autores">
+    {paragraph_2x}
+    {paragraph_3x}
+    {paragraph_4x}
+    </div>
+    {paragraph_5x}
+    {paragraph_6x}
+    {paragraph_7x}
+    <br/>
+    <br/>
+    {subtitle_3x}
+    <br/>
+    {paragraph_8x}
+    {paragraph_9x}
+    {paragraph_10x}
+    {paragraph_11x}
+    <br/>
+    <br/>
+    {subtitle_4x}
+    <br/>
+    {paragraph_12x}
+    {paragraph_13x}
+    {paragraph_14x}
+    {paragraph_15x}
+    <br/>
+    <br/>
+    {subtitle_5x}
+    <br/>
+    {paragraph_16x}
+    {paragraph_17x}
+    {paragraph_18x}
+    {paragraph_19x}
+    <br/>
+    <br/>
+    <div class="menu__dos">
+    {paragraph_26x}
+    </div>
+  </div>  
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
