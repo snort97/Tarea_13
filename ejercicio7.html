@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css7.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Destinos Turísticos",
+  title_2: "América",
+  title_3: "1. Argentina",
+  title_4: "2. Brasil",
+  title_5: "3. Chile",
+  title_6: "4. Colombia",
+  title_7: "5. Estados Unidos",
+  title_8: "6. México",
+  title_9: "7. Perú",
+  title_10: "8. Venezuela",
+  paragraph_1: "1. Buenos Aires",
+  paragraph_2: "2. Bariloche",
+  paragraph_3: "1. Rio de Janeiro",
+  paragraph_4: "2. Brasilia",
+  paragraph_5: "1. Santiago",
+  paragraph_6: "2. Valparaiso",
+  paragraph_7: "1. Bogotá",
+  paragraph_8: "2. Cartagena de Indias",
+  paragraph_9: "1. New York",
+  paragraph_10: "2. San Francisco",
+  paragraph_11: "1. Cancún",
+  paragraph_12: "2. Acapulco",
+  paragraph_13: "1. Lima",
+  paragraph_14: "2. Cuzco",
+  paragraph_15: "1. Margarita",
+  paragraph_16: "2. Mérida",
+}
+
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const subtitle_2x = <h3>{data.title_3}</h3>;
+const subtitle_3x = <h3>{data.title_4}</h3>;
+const subtitle_4x = <h3>{data.title_5}</h3>;
+const subtitle_5x = <h3>{data.title_6}</h3>;
+const subtitle_6x = <h3>{data.title_7}</h3>;
+const subtitle_7x = <h3>{data.title_8}</h3>;
+const subtitle_8x = <h3>{data.title_9}</h3>;
+const subtitle_9x = <h3>{data.title_10}</h3>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+const paragraph_4x = <p>{data.paragraph_4}</p>;
+const paragraph_5x = <p>{data.paragraph_5}</p>;
+const paragraph_6x = <p>{data.paragraph_6}</p>;
+const paragraph_7x = <p>{data.paragraph_7}</p>;
+const paragraph_8x = <p>{data.paragraph_8}</p>;
+const paragraph_9x = <p>{data.paragraph_9}</p>;
+const paragraph_10x = <p>{data.paragraph_10}</p>;
+const paragraph_11x = <p>{data.paragraph_11}</p>;
+const paragraph_12x = <p>{data.paragraph_12}</p>;
+const paragraph_13x = <p>{data.paragraph_13}</p>;
+const paragraph_14x = <p>{data.paragraph_14}</p>;
+const paragraph_15x = <p>{data.paragraph_15}</p>;
+const paragraph_16x = <p>{data.paragraph_16}</p>;
+
+const element = (
+  <div class="menu">
+    {title_x}
+    <br/>
+    {subtitle_x}
+    <br/>
+    {subtitle_2x}
+    <div class="menu">
+    {paragraph_x}
+    {paragraph_2x}
+</div>
+    {subtitle_3x}
+    <div class="menu">
+    {paragraph_3x}
+    {paragraph_4x}
+</div>
+    {subtitle_4x}
+    <div class="menu">
+    {paragraph_5x}
+    {paragraph_6x}
+</div>
+    {subtitle_5x}
+    <div class="menu">
+    {paragraph_7x} 
+    {paragraph_8x}
+</div>
+    {subtitle_6x}
+    <div class="menu">
+    {paragraph_9x}
+    {paragraph_10x}
+</div>
+    {subtitle_7x}
+    <div class="menu">
+    {paragraph_11x}
+    {paragraph_12x}
+</div>
+    {subtitle_8x}
+    <div class="menu">
+    {paragraph_13x}
+    {paragraph_14x}
+</div>
+    {subtitle_9x}
+    <div class="menu">
+    {paragraph_15x}   
+    {paragraph_16x}
+    </div>
+  </div>  
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
