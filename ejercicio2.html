@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css3.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Página inicial de Juan Tuesta",
+  title_2: "Enlaces favoritos:",
+  paragraph_1: "Bienvenido a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+  paragraph_2: "1.Internet",
+  paragraph_3: "2.Google",
+  paragraph_4: "3.Aldea global",
+  paragraph_5: "4.Manual de HTML",
+  paragraph_6: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+const paragraph_4x = <p>{data.paragraph_4}</p>;
+const paragraph_5x = <p>{data.paragraph_5}</p>;
+const paragraph_6x = <p>{data.paragraph_6}</p>;
+
+const element = (
+  <div class="menu">
+    {title_x}
+    <br/>
+    {paragraph_x}
+    <br/>
+    {subtitle_x}
+    <br/>
+    {paragraph_2x}
+    {paragraph_3x}
+    {paragraph_4x}
+    {paragraph_5x}
+    <br/>
+    <div class="menu__dos">
+    {paragraph_6x}
+    </div>
+  </div>  
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
