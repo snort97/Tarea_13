@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css9.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
+
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
+
+// 0. guardado de datos simple
+const data = {
+  title_1: "Cartelera de vuelos - Aeropuerto el mirador",
+  title_2: "Llegadas",
+  title_3: "Salidas",
+  title_4: "Aerolinea",
+  title_5: "Nro. vuelo",
+  title_6: "Estatus",
+  title_7: "Hora estimada",
+  title_8: "Puerta",
+  paragraph_1: "AIRLAN",
+  paragraph_2: "VIAJAR",
+  paragraph_3: "AEROVUELO",
+  paragraph_4: "355",
+  paragraph_5: "556",
+  paragraph_6: "1234",
+  paragraph_7: "ATERRIZO",
+  paragraph_8: "RETARDADO",
+  paragraph_9: "EN VUELO",
+  paragraph_10: "2:45PM",
+  paragraph_11: "2:35PM",
+  paragraph_12: "3:45PM",
+  paragraph_13: "3",
+  paragraph_14: "6",
+  paragraph_15: "8",
+  paragraph_16: "EMBARCANDO",
+  paragraph_17: "2:15PM",
+  paragraph_18: "1",
+}
+
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const subtitle_2x = <h3>{data.title_3}</h3>;
+const subtitle_3x = <h3>{data.title_4}</h3>;
+const subtitle_4x = <h3>{data.title_5}</h3>;
+const subtitle_5x = <h3>{data.title_6}</h3>;
+const subtitle_6x = <h3>{data.title_7}</h3>;
+const subtitle_7x = <h3>{data.title_8}</h3>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+const paragraph_3x = <p>{data.paragraph_3}</p>;
+const paragraph_4x = <p>{data.paragraph_4}</p>;
+const paragraph_5x = <p>{data.paragraph_5}</p>;
+const paragraph_6x = <p>{data.paragraph_6}</p>;
+const paragraph_7x = <p>{data.paragraph_7}</p>;
+const paragraph_8x = <p>{data.paragraph_8}</p>;
+const paragraph_9x = <p>{data.paragraph_9}</p>;
+const paragraph_10x = <p>{data.paragraph_10}</p>;
+const paragraph_11x = <p>{data.paragraph_11}</p>;
+const paragraph_12x = <p>{data.paragraph_12}</p>;
+const paragraph_13x = <p>{data.paragraph_13}</p>;
+const paragraph_14x = <p>{data.paragraph_14}</p>;
+const paragraph_15x = <p>{data.paragraph_15}</p>;
+const paragraph_16x = <p>{data.paragraph_16}</p>;
+const paragraph_17x = <p>{data.paragraph_17}</p>;
+const paragraph_18x = <p>{data.paragraph_18}</p>;
+
+const element = (
+  <div class="menu">
+    {title_x}
+    <br/>
+    {subtitle_x}
+    <br/>
+<table class="default" border="1">
+
+<tr>
+  <td>{subtitle_3x}</td>
+  <td>{subtitle_4x}</td>
+  <td>{subtitle_5x}</td>
+  <td>{subtitle_6x}</td>
+  <td>{subtitle_7x}</td>
+</tr>
+
+<tr>
+  <td>{paragraph_x}</td>
+  <td>{paragraph_4x}</td>
+  <td>{paragraph_7x}</td>
+  <td>{paragraph_10x}</td>
+  <td>{paragraph_13x}</td>
+</tr>
+<tr>
+  <td>{paragraph_2x}</td>
+  <td>{paragraph_5x}</td>
+  <td>{paragraph_8x}</td>
+  <td>{paragraph_11x}</td>
+  <td>{paragraph_14x}</td>
+</tr>
+<tr>
+  <td>{paragraph_3x}</td>
+  <td>{paragraph_6x}</td>
+  <td>{paragraph_9x}</td>
+  <td>{paragraph_12x}</td>
+  <td>{paragraph_15x}</td>
+</tr>
+</table>
+<br/>
+{subtitle_3x}
+<br/>
+<table class="default" border="1">
+
+<tr>
+  <td>{subtitle_3x}</td>
+  <td>{subtitle_4x}</td>
+  <td>{subtitle_5x}</td>
+  <td>{subtitle_6x}</td>
+  <td>{subtitle_7x}</td>
+</tr>
+
+<tr>
+  <td>{paragraph_x}</td>
+  <td>{paragraph_4x}</td>
+  <td>{paragraph_16x}</td>
+  <td>{paragraph_17x}</td>
+  <td>{paragraph_18x}</td>
+</tr>
+</table>
+  </div>  
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
+  </body>
+</html>
